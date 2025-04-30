@@ -3,39 +3,12 @@
 <head>
     <title>Redirecting...</title>
     <script>
-        const whatsappNumbers = [
-            "919985046716",
-            "919966513085",
-            "917406420102",
-            "917729074548",
-            "917607663653",
-            "918374124141",
-            "918726097922",
-            "918145140779",
-            "919474603594",
-            "918853880574",
-            "919127134787",
-            "916296277471",
-            "918320204088",
-            "917379835331",
-            "918327586046",
-            "919937495422"
-        ];
-
-        function redirectToSavedOrRandomNumber() {
-            let savedNumber = localStorage.getItem('selectedWhatsappNumber');
-
-            if (!savedNumber) {
-                let randomIndex = Math.floor(Math.random() * whatsappNumbers.length);
-                savedNumber = whatsappNumbers[randomIndex];
-                localStorage.setItem('selectedWhatsappNumber', savedNumber);
-            }
-
-            window.location.href = "https://wa.me/" + savedNumber;
-        }
-
-        window.onload = redirectToSavedOrRandomNumber;
+        window.onload = function() {
+            window.location.href = "https://t.me/SFAEarnings";
+        };
     </script>
 </head>
-<body></body>
+<body>
+    <p>Redirecting to Telegram...</p>
+</body>
 </html>
